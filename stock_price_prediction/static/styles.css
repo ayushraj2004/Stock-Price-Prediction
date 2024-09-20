@@ -1,0 +1,175 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            background: url('https://img.freepik.com/free-vector/forex-trading-background_52683-41604.jpg?size=626&ext=jpg');
+        }
+        
+        .overlay {
+            background: url('https://www.publicdomainpictures.net/pictures/320000/nahled/background-image.png') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.8;
+            z-index: -1;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2.5rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+        /* Modal Styling */
+        
+        .modal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .modal-content {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        .modal-content h2 {
+            color: #007BFF;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .modal-content p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .modal-content ul {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+        
+        .modal-content li {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        .modal .btn {
+            background: #007BFF;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .modal .btn:hover {
+            background-color: #0056b3;
+        }
+        /* Main Content Styling (rest of your styles remains same) */
+        
+        h1 {
+            margin-bottom: 2rem;
+            color: #007BFF;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.3s ease;
+        }
+        
+        input[type="number"]:focus {
+            border-color: #007BFF;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        
+        input::placeholder {
+            color: #bbb;
+        }
+        
+        .btn {
+            background: #007BFF;
+            color: #fff;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #0056b3;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .btn {
+                width: 100%;
+                padding: 1rem;
+            }
+            .container {
+                padding: 1.5rem;
+            }
+        }
