@@ -129,7 +129,7 @@
                 document.getElementById('High').value = data.High;
                 document.getElementById('Low').value = data.Low;
                 document.getElementById('Volume').value = data.Volume;
-                document.getElementById('Ticker').value = ticker; // Update ticker field
+                document.getElementById('Ticker').value = ticker; 
             } catch (error) {
                 console.error('Error fetching stock data:', error);
             }
@@ -152,7 +152,7 @@
                 if (selectedStock) {
                     fetchStockData(selectedStock);
                 } else {
-                    // Clear fields if no stock is selected
+                    
                     document.getElementById('Open').value = '';
                     document.getElementById('High').value = '';
                     document.getElementById('Low').value = '';
